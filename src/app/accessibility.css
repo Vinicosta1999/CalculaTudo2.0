@@ -1,0 +1,73 @@
+/* Estilos para o modo de alto contraste */
+.high-contrast {
+  --background: #000000;
+  --foreground: #ffffff;
+  --primary: #ffff00;
+  --primary-foreground: #000000;
+  --secondary: #00ffff;
+  --secondary-foreground: #000000;
+  --muted: #333333;
+  --muted-foreground: #ffffff;
+  --accent: #ff00ff;
+  --accent-foreground: #000000;
+  --destructive: #ff0000;
+  --destructive-foreground: #ffffff;
+  --border: #ffffff;
+  --input: #ffffff;
+  --ring: #ffff00;
+  --card: #000000;
+  --card-foreground: #ffffff;
+}
+
+.high-contrast button {
+  border: 2px solid white;
+}
+
+.high-contrast a {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+.high-contrast input,
+.high-contrast select {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+}
+
+.high-contrast .text-muted-foreground {
+  color: #cccccc !important;
+}
+
+/* Estilos para foco visível em todos os elementos interativos */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* Melhorias para navegação por teclado */
+[tabindex]:not([tabindex="-1"]):focus {
+  position: relative;
+  z-index: 1;
+}
+
+/* Skip link para acessibilidade */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
