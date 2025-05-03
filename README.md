@@ -57,12 +57,13 @@ pnpm test
 
 ## Deploy
 
-A aplicação pode ser facilmente implantada na Vercel:
+A aplicação pode ser facilmente implantada na Netlify:
 
 1. Faça fork deste repositório
-2. Conecte-se à Vercel (vercel.com)
+2. Conecte-se à Netlify (netlify.com)
+
 3. Importe o projeto do GitHub
-4. A Vercel detectará automaticamente que é um projeto Next.js e configurará o build
+4. A Netlify detectará automaticamente que é um projeto Next.js e configurará o build
 
 ## Licença
 
